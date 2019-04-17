@@ -1,0 +1,33 @@
+{
+  "name": "brandonyeoxg-web-backend",
+  "version": "1.0.0",
+  "description": "Nodejs react RestAPIs",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonyeoxg/brandonyeoxg-web-backend.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "React",
+    "RestAPI",
+    "Redux",
+    "PostgreSQL"
+  ],
+  "author": "brandonyeoxg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonyeoxg/brandonyeoxg-web-backend/issues"
+  },
+  "homepage": "https://github.com/brandonyeoxg/brandonyeoxg-web-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "pg": "^7.10.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^5.6.0"
+  }
+}

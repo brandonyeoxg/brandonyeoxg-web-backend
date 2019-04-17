@@ -18,7 +18,7 @@ db.sequelize.sync({force: true}).then(() => {
     console.log('Drop and Resync with { force: true }');
 })
 
-require('./app/route/book.route.js')(app)
+require('./app/route/project.route.js')(app)
 
 var server = app.listen(8080, () => {
     var host = server.address().address;

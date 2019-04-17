@@ -82,3 +82,5 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+./app/config/env.js

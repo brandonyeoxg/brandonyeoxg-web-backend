@@ -20,6 +20,6 @@ db.Sequelize = Sequelize
 db.sequelize = sequelize
 
 // Models/tables
-db.books = require('../model/project.model.js')(sequelize, Sequelize);
+db.projects = require('../model/project.model.js')(sequelize, Sequelize);
 
 module.exports = db;

@@ -16,7 +16,9 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.STRING
         },
         uid: {
-            type: Sequelize.INTEGER
+            type: Sequelize.UUID,
+            defaultValue: Sequelize.UUIDV4,
+            primaryKey: true
         }
     })
     return Project;

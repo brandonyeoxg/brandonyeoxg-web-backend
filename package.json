@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/brandonyeoxg/brandonyeoxg-web-backend#readme",
   "dependencies": {
+    "custom-env": "^1.0.0",
     "express": "^4.16.4",
     "mongoose": "^5.5.3",
     "node-uuid": "^1.4.8"

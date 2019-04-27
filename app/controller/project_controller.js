@@ -1,4 +1,4 @@
-const db = require('../config/db.mongo.config');
+const db = require('../config/db_mongo_config');
 const ProjectModel = require('../model/project_model');
 
 exports.findAll = function(req, res, next) {

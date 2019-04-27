@@ -1,0 +1,40 @@
+version: '3.5'
+
+services:
+  backend:
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - brandonyeoxg-web-backend:/usr/src/app
+    environment:
+      - NODE_ENV=development
+    networks:
+      - front-facing
+      - no-internet
+    depends_on:
+      - db
+  db:
+    image: mongo:4
+    volumes:
+      - db_mongo:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=$INITDB_ROOT_USERNAME
+      - MONGO_INITDB_ROOT_PASSWORD=$INITDB_ROOT_PASSWORD
+      - MONGO_INITDB_DATABASE=$INITDB_DATABASE
+    env_file: .env
+    networks:
+      - no-internet
+
+volumes:
+  db_mongo:
+    external:
+      name: db_mongo
+  brandonyeoxg-web-backend:
+
+networks:
+  front-facing:
+  no-internet:
+    driver: bridge
+    internal: true
